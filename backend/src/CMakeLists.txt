@@ -179,6 +179,7 @@ ll_add_library (${pcm_lib} pcm_sources)
 ADD_DEPENDENCIES (gbe pch_object ${pcm_lib})
 target_link_libraries(
                       gbe
+                      tinfo
                       ${DRM_INTEL_LIBRARY}
                       ${DRM_LIBRARY}
                       ${OPENGL_LIBRARIES}
